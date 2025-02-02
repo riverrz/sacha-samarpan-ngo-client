@@ -1,0 +1,54 @@
+{
+  "name": "saccha-samarpan",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/register/member": {
+      "target": "http://localhost:5000"
+    },
+    "/register/intern": {
+      "target": "http://localhost:5000"
+    },
+    "/support/email": {
+      "target": "http://localhost:5000"
+    },
+    "/getUser": {
+      "target": "http://localhost:5000"
+    },
+    "/user/login": {
+      "target": "http://localhost:5000"
+    },
+    "/user/register": {
+      "target": "http://localhost:5000"
+    },
+    "/event": {
+      "target": "http://localhost:5000"
+    },
+    "/fetch/event/*": {
+      "target": "http://localhost:5000"
+    },
+    "/upload/*": {
+      "target": "http://localhost:5000"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-loadable": "^5.5.0",
+    "react-md-spinner": "^0.3.0",
+    "react-redux": "^5.0.7",
+    "react-responsive-carousel": "^3.1.41",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

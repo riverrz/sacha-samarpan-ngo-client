@@ -1,0 +1,121 @@
+.frontPage__frontTextAndLogoBox {
+  position: relative;
+}
+.frontPage__saffron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50rem;
+  width: 50rem;
+  background-color: #ff9933;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.frontPage__green {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 50rem;
+  width: 60rem;
+  background-color: #008000;
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+.frontPage__iconRow {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 10rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.frontPage__iconRow__item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 8rem 2rem 8rem;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+.frontPage__iconRow__item__heading {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.frontPage__iconRow__item__para {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.frontPage__iconRow__item__link {
+  color: #222222;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.frontPage__iconRow__item__iconContainer {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  top: -20px;
+  left: 50%;
+  border-top: 1px solid #bbbbbb;
+  padding-top: 3px;
+  /* background-color: #8DEEEE; */
+  background-color: #fff;
+  transform: translate(-50%, 0);
+}
+.frontPage__iconRow__item__icon {
+  width: 80%;
+  height: 80%;
+}
+.frontPage__active {
+  color: #008000 !important;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1024px) {
+  .frontPage__saffron {
+    height: 40rem;
+    width: 40rem;
+  }
+  .frontPage__green {
+    height: 40rem;
+    width: 40rem;
+  }
+}
+@media (max-width: 960px) {
+  .frontPage__saffron {
+    height: 35rem;
+    width: 35rem;
+  }
+  .frontPage__green {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+@media (max-width: 700px) {
+  .frontPage__saffron {
+    height: 25rem;
+    width: 25rem;
+  }
+  .frontPage__green {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 600px) {
+  .frontPage__saffron {
+    height: 17rem;
+    width: 17rem;
+  }
+  .frontPage__green {
+    height: 17rem;
+    width: 17rem;
+  }
+}

@@ -1,0 +1,46 @@
+.dropDown__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150%;
+  list-style: none;
+  z-index: 999;
+  opacity: 0;
+    visibility: hidden;
+  transform: translateX(20px);
+  transition: all .4s;
+}
+.dropDown__list > li {
+  color: #fff;
+  background-color: #222126;
+  font-family: "Exo" ,sans-serif;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+.dropDown__list>li:hover {
+  background-color: #ff9933;
+}
+.dropDown__list>li > a {
+  display: flex;
+  padding-left: 1.2rem;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #e2e2e2;
+}
+.dropDown__list>li:hover > a {
+  color: white;
+  transform: translateX(9px);
+}
+.dropDown__list>li:hover > a > i {
+  color: #fff;
+}
+.dropDown__list>li a i {
+  font-size: 1.3rem;
+  color: #bbbbbb;
+  margin-right: 0.8rem ;
+}
+

@@ -1,0 +1,9 @@
+.whiteContainer {
+    width: 100%;
+    font-family: inherit;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    position: relative;
+}

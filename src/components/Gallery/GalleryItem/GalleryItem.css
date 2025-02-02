@@ -1,0 +1,34 @@
+.galleryItem {
+  height: 25rem;
+  width: 30rem;
+  min-height: 250px;
+  min-width: 300px;
+  margin: 3rem 0;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+.frontGalleryGridItem {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.galleryItem__img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transition: all 0.4s;
+  transform: scale(1.1);
+}
+.galleryItem:hover .galleryItem__img {
+  transform: scale(1);
+  filter: brightness(60%);
+}
+.frontGalleryGridItem:hover .galleryItem__img {
+  transform: scale(1);
+  filter: brightness(60%);
+}

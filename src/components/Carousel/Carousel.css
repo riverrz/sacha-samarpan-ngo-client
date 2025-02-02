@@ -1,0 +1,45 @@
+.carousel__imageBox {
+  position: relative;
+}
+.carousel__imageBox > img {
+  height: 90vh;
+}
+.onImg {
+  height: 20rem;
+  width: 20rem;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.carousal__imageDescription {
+  background-color: transparent;
+  color: #fff;
+  background-color: rgba(20, 20, 20, 0.7);
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.carousal__imageTitle {
+  font-size: 3.5rem;
+}
+.carousal__imageText {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1024px) {
+  .carousel__imageBox > img {
+    height: 80vh;
+  }
+}
+@media (max-width: 960px) {
+  .carousel__imageBox > img {
+    height: 60vh;
+  }
+}

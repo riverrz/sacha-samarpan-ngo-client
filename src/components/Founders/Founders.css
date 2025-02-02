@@ -1,0 +1,128 @@
+.founders__heading--primary {
+  font-size: 4rem;
+  display: inline-block;
+  font-weight: bold;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+}
+.founders__headingSpan {
+  color: #ff9933;
+}
+
+.founders__left {
+  position: relative;
+  margin: 0 1rem 0 2rem;
+}
+.founder {
+  width: 80%;
+  margin: 5rem auto;
+  text-align: left;
+  padding: 2rem;
+  transform: skew(-10deg);
+  background-color: #d3d3d3;
+  display: flex;
+}
+.founder > * {
+  transform: skew(+10deg);
+}
+.founder__figure {
+  height: 20rem;
+  width: 20rem;
+  display: block;
+  flex: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.founder__photo {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  transform: scale(1.02);
+}
+.founder__contact {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.founder__iconContainer {
+  text-decoration: none;
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+}
+.founder__icon {
+  height: 100%;
+  width: 100%;
+}
+
+.founder__info {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  color: #222222;
+  padding-left: 5rem;
+  flex: 3;
+}
+.founder__info > p {
+  line-height: 2.5rem;
+}
+.founder__designation {
+  font-family: inherit;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.founder__readMoreContainer {
+  margin-top: 2rem;
+}
+
+.founder__readMoreButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.founder__readMoreButton > a {
+  font-family: Exo;
+  padding: 3px;
+  font-size: 1.5rem;
+  color: #ba265d !important;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.founder__readMoreButton:hover {
+  transform: scale(1.1);
+}
+
+/*Media Queries*/
+
+@media (max-width: 960px) {
+  .founder {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .founder {
+    width: 95%;
+    transform: skew(0);
+  }
+  .founder > * {
+    transform: skew(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .founder {
+    flex-flow: column;
+    text-align: center;
+  }
+  .founder__figure {
+    margin: auto;
+  }
+  .founder__info {
+    padding-left: 0;
+  }
+}

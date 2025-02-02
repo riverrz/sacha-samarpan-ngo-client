@@ -1,0 +1,9 @@
+.eventUpcoming__heading--primary {
+    font-size: 3.4rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+.eventUpcoming__container {
+    text-align: left;
+    padding: 4rem 4rem;
+}

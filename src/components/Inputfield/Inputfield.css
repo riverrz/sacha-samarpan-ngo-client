@@ -1,0 +1,23 @@
+.inputfield__container {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+.inputfield {
+    width: 40rem;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 60px;
+    outline: none;
+    color: #666666;
+    background-color: #e6e6e6;
+    transition: background-color 0.2s ease;
+}
+.inputfield:focus {
+    background-color: #e6e6e6;
+}
+.inputfield__container i {
+    margin-left: -25px;
+    color: dodgerblue;
+}

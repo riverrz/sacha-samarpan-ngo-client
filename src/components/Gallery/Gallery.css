@@ -1,0 +1,39 @@
+.gallery__headingPrimary {
+  font-size: 4rem;
+  display: inline-block;
+  font-weight: bold;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 2rem;
+}
+.gallery__headingPrimary span {
+  color: #ff9933;
+  display: inline-block;
+}
+.gallery {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery__link {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.gallery__link > a {
+  font-family: inherit;
+  padding: 3px;
+  font-size: 1.8rem;
+  color: #ba265d !important;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.gallery__link:hover {
+  transform: scale(1.1);
+}
+.gallery__link:hover .arrow {
+  transform: translateX(10px);
+}
